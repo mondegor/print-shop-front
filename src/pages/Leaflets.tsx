@@ -41,7 +41,7 @@ interface ICalculatedFields {
 }
 
 const initialResult = {
-  box: {
+  fullBox: {
     weight: 0,
     volume: 0,
     innerVolume: 0,
