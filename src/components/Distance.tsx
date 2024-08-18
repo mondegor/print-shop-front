@@ -5,7 +5,7 @@ const Distance = () => {
         <>
             <Form.Item
                 label="Расстояние между листовками по вертикали:"
-                name="distanceVertical"
+                name="verticalSpacing"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
                 colon={false}
@@ -14,7 +14,7 @@ const Distance = () => {
             </Form.Item>
             <Form.Item
                 label="Расстояние между листовками по горизонтали:"
-                name="distanceHorizontal"
+                name="horizontalSpacing"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
                 colon={false}

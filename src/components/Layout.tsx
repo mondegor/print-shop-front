@@ -4,13 +4,9 @@ import { Form, InputNumber, Space } from "antd";
 const Layout = () => {
     return (
         <>
-            <Form.Item
-                label="Разместить на листе:"
-                name="paperSize"
-                colon={false}
-            >
+            <Form.Item label="Разместить на листе:" colon={false}>
                 <Space align="center">
-                    <Form.Item name="paperDimensionX" style={{ margin: 0 }}>
+                    <Form.Item name="paperWidth" style={{ margin: 0 }}>
                         <InputNumber
                             min={1}
                             max={1000}
@@ -20,7 +16,7 @@ const Layout = () => {
                     <div>
                         <CloseOutlined />
                     </div>
-                    <Form.Item name="paperDimensionY" style={{ margin: 0 }}>
+                    <Form.Item name="paperHeight" style={{ margin: 0 }}>
                         <InputNumber
                             min={1}
                             max={1000}
@@ -31,7 +27,7 @@ const Layout = () => {
             </Form.Item>
             <Form.Item
                 label="Сверху пустое поле"
-                name="top"
+                name="topEmptyField"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
             >
@@ -39,7 +35,7 @@ const Layout = () => {
             </Form.Item>
             <Form.Item
                 label="Снизу пустое поле"
-                name="bottom"
+                name="bottomEmptyField"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
             >
@@ -47,7 +43,7 @@ const Layout = () => {
             </Form.Item>
             <Form.Item
                 label="Слева пустое поле"
-                name="left"
+                name="leftEmptyField"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
             >
@@ -55,7 +51,7 @@ const Layout = () => {
             </Form.Item>
             <Form.Item
                 label="Справа пустое поле"
-                name="right"
+                name="rightEmptyField"
                 wrapperCol={{ span: 8 }}
                 labelCol={{ span: 16 }}
             >
